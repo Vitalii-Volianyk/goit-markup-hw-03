@@ -1,0 +1,141 @@
+:root{
+    --accent-color:#2196F3;
+    --accent-hover:#188CE8;
+    --dark-font:#000000;
+    --light-font:#ffffff;
+    --font-color:#212121;
+    --contact-color:#757575;
+    --bg-color:#2F303A;
+    --footer-link:rgba(255, 255, 255, 0.6);
+}
+/* Global styles */
+body{
+    font-family: 'Roboto', sans-serif;
+    color: var(--font-color);
+    font-size: 14px;
+    line-height: 1.46;
+}
+/* Styles for header */
+.header{
+    font-weight: 500;
+    line-height: calc(16.41/14);
+    letter-spacing: calc(14px*0.02);
+}
+.list{
+    list-style: none;
+}
+.contact-link, .navigation-link, .logo{
+    text-decoration: none;
+    color: inherit;
+}
+.header .contact-link{
+    color: var(--contact-color);
+}
+
+.logo{
+    font-family: 'Raleway', sans-serif;;
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--accent-color);
+    letter-spacing: calc(26px*0.03);
+}
+.header .sub-logo{
+    color: var(--dark-font);
+}
+
+/* Studio main styles */
+.hero{
+    background-color: var(--bg-color);
+    color: var(--light-font);
+}
+.section .heading{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42.19/36);
+}
+.hero .heading{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    letter-spacing: calc(44px*0.06);
+    line-height: calc(60/44);
+}
+.hero .button{
+    color: inherit;
+    background-color: var(--accent-color);
+    font-weight: 700;
+    letter-spacing: calc(16px*0.06);
+    line-height: calc(30/16);
+}
+.button{
+    border: none;
+    font-size: 16px;
+    font-family: inherit;
+}
+.button:hover{
+    background-color:var(--accent-hover);
+    cursor: pointer;
+}
+.section{
+    text-align: center;
+    letter-spacing: calc(36px*0.03);
+}
+.title{
+    text-transform: uppercase;
+    font-size: inherit;
+    line-height: calc(16.41/14);
+}
+.description{
+    line-height: calc(24/14);
+    color: var(--contact-color);
+}
+.worker-name, .profession{
+    font-size: 16px;
+    line-height: calc(18.75/16);
+    font-weight: 500;
+}
+.profession{
+    font-weight: 400;
+    color: var(--contact-color);
+}
+
+/* Portfolio main styles */
+.filters .button{
+    background-color: var(--light-font);
+    font-weight: 500;
+    line-height: calc(26/16);
+    border-radius: 5px;
+}
+.filters .button:hover, .filters .active{
+    background-color: var(--accent-color);
+    color: var(--light-font);
+}
+.project-name{
+    font-size: 18px;
+    line-height: calc(36/18);
+    letter-spacing: calc(18px*0.06);
+}
+.project-type{
+    font-size: 16px;
+    line-height: calc(30/16);
+    color: var(--contact-color);
+}
+/* Footer styles */
+.footer{
+    background-color: var(--bg-color);
+}
+.footer .sub-logo, .address-info{
+    color: var(--light-font);
+}
+.address-info{
+    font-style: normal;
+}
+.footer .contact-link{
+    color: var(--footer-link);
+}
+
+.current, .contact-link:hover, .navigation-link:hover{
+    color: var(--accent-color);
+}
+
+
