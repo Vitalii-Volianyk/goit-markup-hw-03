@@ -1,4 +1,4 @@
-# GoIT-markup-hw-02
-GoIT home work #2
+# GoIT-markup-hw-03
+GoIT home work #3
 
-https://vitalii-volianyk.github.io/goit-markup-hw-02/
+https://vitalii-volianyk.github.io/goit-markup-hw-03/
