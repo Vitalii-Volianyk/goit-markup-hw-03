@@ -15,11 +15,16 @@ body{
     font-size: 14px;
     line-height: 1.46;
 }
+ul, h1{
+    padding: 0;
+    margin: 0;
+}
 /* Styles for header */
 .header{
     font-weight: 500;
     line-height: calc(16.41/14);
     letter-spacing: calc(14px*0.02);
+    border-bottom: 1px #ECECEC;
 }
 .list{
     list-style: none;
@@ -36,17 +41,36 @@ body{
     font-family: 'Raleway', sans-serif;;
     font-weight: 700;
     font-size: 26px;
+    line-height: calc(30.52/26);
     color: var(--accent-color);
     letter-spacing: calc(26px*0.03);
 }
 .header .sub-logo{
     color: var(--dark-font);
 }
+.navigation{
+    margin-right: auto;
+    margin-left: 93px;
+    padding: 32px 0;
+}
+.navigation-item{
+    margin: 0 25px;
+}
+.navigation-item:first-child, .header .contact-item:first-child, .about:first-child, .filter:first-child{
+    margin-left: 0;
+}
+.navigation-item:last-child, .header .contact-item:last-child, .about:last-child, .filter:last-child{
+    margin-right: 0;
+}
+.header .contact-item{
+    margin: 0 25px;
+}
 
 /* Studio main styles */
 .hero{
     background-color: var(--bg-color);
     color: var(--light-font);
+    padding: 200px 0;
 }
 .section .heading{
     font-weight: 700;
@@ -59,6 +83,7 @@ body{
     font-size: 44px;
     letter-spacing: calc(44px*0.06);
     line-height: calc(60/44);
+    margin-bottom: 30px;
 }
 .hero .button{
     color: inherit;
@@ -66,6 +91,8 @@ body{
     font-weight: 700;
     letter-spacing: calc(16px*0.06);
     line-height: calc(30/16);
+    padding: 10px 32px;
+    border-radius: 5px;
 }
 .button{
     border: none;
@@ -79,6 +106,13 @@ body{
 .section{
     text-align: center;
     letter-spacing: calc(36px*0.03);
+    padding: 94px 0;
+}
+.heading{
+    margin-bottom: 50px;
+}
+.hero .heading{
+    margin-bottom: 0;
 }
 .title{
     text-transform: uppercase;
@@ -98,31 +132,66 @@ body{
     font-weight: 400;
     color: var(--contact-color);
 }
-
+.team-about{
+    text-align: center;
+    padding: 15px 0;
+}
 /* Portfolio main styles */
+.list.filters{
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.filter{
+    margin: 0 4px;
+}
 .filters .button{
     background-color: var(--light-font);
     font-weight: 500;
     line-height: calc(26/16);
     border-radius: 5px;
+    padding: 6px 22px;
 }
 .filters .button:hover, .filters .active{
     background-color: var(--accent-color);
     color: var(--light-font);
 }
+.projects{
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.project-item{
+    border: 1px #EEEEEE;
+}
+.project-about{
+    padding: 20px 24px;
+    text-align: left;
+}
 .project-name{
     font-size: 18px;
     line-height: calc(36/18);
     letter-spacing: calc(18px*0.06);
+    margin: 0;
 }
 .project-type{
     font-size: 16px;
     line-height: calc(30/16);
     color: var(--contact-color);
+    margin: 4px 0 0;
 }
 /* Footer styles */
 .footer{
     background-color: var(--bg-color);
+    padding: 60px 0;
+}
+.footer .logo{
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.footer .contact-item{
+    line-height: calc(21/14);
+}
+.footer .contact-item:nth-child(2){
+    margin: 9px 0;
 }
 .footer .sub-logo, .address-info{
     color: var(--light-font);
@@ -138,4 +207,23 @@ body{
     color: var(--accent-color);
 }
 
-
+.header .container, .list{
+    display: flex;
+    align-items: center;
+}
+.footer .list{
+    display: block;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.team-card{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px; 
+}
+.about{
+    text-align: left;
+    margin: 0 15px;
+}
