@@ -54,6 +54,9 @@ img{
     color: var(--accent-color);
     letter-spacing: calc(26px*0.03);
 }
+.header .logo{
+    padding: 24px 0;
+}
 .header .sub-logo{
     color: var(--dark-font);
 }
