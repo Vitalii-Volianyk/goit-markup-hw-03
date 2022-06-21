@@ -30,7 +30,7 @@ img{
     font-weight: 500;
     line-height: calc(16.41/14);
     letter-spacing: calc(14px*0.02);
-    border-bottom: 1px #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 .list{
     list-style: none;
