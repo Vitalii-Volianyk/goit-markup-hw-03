@@ -3,6 +3,7 @@
     --accent-hover:#188CE8;
     --dark-font:#000000;
     --light-font:#ffffff;
+    --lightness-back:#f5f4fa;
     --font-color:#212121;
     --contact-color:#757575;
     --bg-color:#2F303A;
@@ -18,6 +19,11 @@ body{
 ul, h1{
     padding: 0;
     margin: 0;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 /* Styles for header */
 .header{
@@ -36,13 +42,17 @@ ul, h1{
 .header .contact-link{
     color: var(--contact-color);
 }
-
+.header .contact-link, .navigation-link{
+    padding: 32px 0;
+    display: block;
+}
 .logo{
     font-family: 'Raleway', sans-serif;;
     font-weight: 700;
     font-size: 26px;
     line-height: calc(30.52/26);
     color: var(--accent-color);
+    padding: 24px 0;
     letter-spacing: calc(26px*0.03);
 }
 .header .sub-logo{
@@ -51,7 +61,6 @@ ul, h1{
 .navigation{
     margin-right: auto;
     margin-left: 93px;
-    padding: 32px 0;
 }
 .navigation-item{
     margin: 0 25px;
@@ -76,6 +85,9 @@ ul, h1{
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42.19/36);
+}
+.hero .container{
+    text-align: center;
 }
 .hero .heading{
     text-transform: uppercase;
@@ -104,15 +116,18 @@ ul, h1{
     cursor: pointer;
 }
 .section{
-    text-align: center;
-    letter-spacing: calc(36px*0.03);
     padding: 94px 0;
 }
-.heading{
-    margin-bottom: 50px;
+.padding-bot-0{
+padding-bottom: 0;
 }
-.hero .heading{
-    margin-bottom: 0;
+.background-mod{
+    background-color: var(--lightness-back);
+}
+.heading{
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
 }
 .title{
     text-transform: uppercase;
@@ -127,25 +142,29 @@ ul, h1{
     font-size: 16px;
     line-height: calc(18.75/16);
     font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 .profession{
     font-weight: 400;
     color: var(--contact-color);
+    margin: 0;
 }
 .team-about{
     text-align: center;
-    padding: 15px 0;
+    padding: 30px 0;
+    background-color: var(--light-font);
 }
 /* Portfolio main styles */
 .list.filters{
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 .filter{
     margin: 0 4px;
 }
 .filters .button{
-    background-color: var(--light-font);
+    background-color: var(--lightness-back);
     font-weight: 500;
     line-height: calc(26/16);
     border-radius: 5px;
@@ -157,14 +176,15 @@ ul, h1{
 }
 .projects{
     flex-wrap: wrap;
-    gap: 15px;
+    margin: -15px;
 }
 .project-item{
-    border: 1px #EEEEEE;
+    margin: 15px;
 }
 .project-about{
+    border: 1px solid #EEEEEE;
+    border-top: 0;
     padding: 20px 24px;
-    text-align: left;
 }
 .project-name{
     font-size: 18px;
@@ -218,6 +238,7 @@ ul, h1{
     width: 1200px;
     margin: 0 auto;
     justify-content: space-between;
+    padding: 0 15px;
 }
 .team-card{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
