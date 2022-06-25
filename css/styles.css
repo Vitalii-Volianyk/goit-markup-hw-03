@@ -67,6 +67,7 @@ img{
 .navigation-item{
     margin: 0 25px;
 }
+
 .navigation-item:first-child, .header .contact-item:first-child, .about:first-child, .filter:first-child{
     margin-left: 0;
 }
